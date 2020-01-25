@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/cardview_shadow_end_color"
+
+    tools:context="project.uas.febri.MainActivity">
+
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:clickable="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="10dp">
+
+
+<LinearLayout
+    android:id="@+id/linearTambahData"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+  <ImageView
+    android:id="@+id/tambahdata"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:background="@drawable/lingkaran_merah"
+    android:padding="10dp"
+    android:src="@drawable/ic_tambah_data"
+    android:tint="#FFF"
+    tools:ignore="VectorDrawableCompat" />
+
+  <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="#fc4e03"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/linearLihaData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+          <ImageView
+            android:id="@+id/lihatdata"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/lingkaranhijau"
+            android:padding="10dp"
+            android:src="@drawable/ic_lihat_data"
+            android:tint="#FFF"
+            tools:ignore="VectorDrawableCompat" />
+
+          <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#fc4e03"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Data"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+
+        android:id="@+id/cardKeluar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/linearKeluar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/lingkaranbiru"
+                android:padding="10dp"
+                android:src="@drawable/ic_keluar_"
+                android:tint="#FFF"
+                tools:ignore="VectorDrawableCompat"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#fc4e03"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keluar"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+</LinearLayout>

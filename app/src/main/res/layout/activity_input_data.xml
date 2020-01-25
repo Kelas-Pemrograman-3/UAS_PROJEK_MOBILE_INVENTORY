@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:gravity="center"
+  android:background="@color/cardview_shadow_end_color"
+  tools:context="project.uas.febri.inputdata">
+
+  <TextView
+    android:id="@+id/matkul"
+    android:layout_width="233dp"
+    android:layout_height="40dp"
+    android:text="Input Data Barang"
+      android:textAlignment="center"
+    android:textSize="25dp" />
+
+  <ImageView
+    android:id="@+id/imageView"
+    android:layout_width="349dp"
+    android:layout_height="100dp"
+    android:src="@drawable/regis1" />
+
+  <LinearLayout
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="430dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/rounded_background">
+
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/edtKodeBarang"
+      android:hint="Kode Barang"
+      android:inputType="textAutoComplete"
+      android:drawableRight="@drawable/ic_password1"/>
+
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/edtNamamBarang"
+      android:hint="Nama Barang"
+      android:inputType="textAutoComplete"
+      android:drawableRight="@drawable/ic_password1"/>
+
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/edtTanggalMasuk"
+      android:hint="Tanggal Masuk"
+      android:inputType="textAutoComplete"
+      android:drawableRight="@drawable/ic_password1"/>
+
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/edtStok"
+      android:hint="Stok"
+      android:inputType="textAutoComplete"
+      android:drawableRight="@drawable/ic_password1"/>
+
+
+
+    <Button
+      android:layout_marginTop="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="6dp"
+      android:layout_marginLeft="5dp"
+      android:text="Tambah"
+      android:id="@+id/btnTambah"
+      android:background="@drawable/rounded_background"/>
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:layout_marginTop="5dp">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lihat Data ? " />
+
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:id="@+id/btnMenu"
+        android:text="Disini!"/>
+
+  </LinearLayout>
+</LinearLayout>
+</LinearLayout>
